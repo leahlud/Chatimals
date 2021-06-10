@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_square_corners"
+    android:backgroundTint="#ECECEC">
+
+    <TextView
+        android:id="@+id/pink_textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_square_corners"
+        android:backgroundTint="#FFD4DA"
+        android:fontFamily="@font/fredoka_one"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pink_textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        app:srcCompat="@drawable/pets" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingEnd="30dp"
+        android:text="@string/create_your_pet"
+        android:textColor="#1C1C1C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pink_textView3" />
+
+    <TextView
+        android:id="@+id/confirmPetName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#474747"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+    <TextView
+        android:id="@+id/confirmAnimal_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#474747"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/confirmPetName_textView"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPetName_textView" />
+
+
+    <TextView
+        android:id="@+id/confirmFurColor_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#474747"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/confirmAnimal_textView"
+        app:layout_constraintTop_toBottomOf="@+id/confirmAnimal_textView" />
+
+    <ImageView
+        android:id="@+id/fur_imageView"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/confirmFurColor_textView"
+        app:layout_constraintStart_toEndOf="@+id/confirmFurColor_textView"
+        app:layout_constraintTop_toTopOf="@+id/confirmFurColor_textView"
+        app:srcCompat="@drawable/black" />
+
+    <TextView
+        android:id="@+id/confirmCollarColor_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#474747"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/confirmFurColor_textView"
+        app:layout_constraintTop_toBottomOf="@+id/confirmFurColor_textView" />
+
+    <ImageView
+        android:id="@+id/collar_imageView"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/confirmCollarColor_textView"
+        app:layout_constraintStart_toEndOf="@+id/confirmCollarColor_textView"
+        app:layout_constraintTop_toTopOf="@+id/confirmCollarColor_textView"
+        app:srcCompat="@drawable/black" />
+
+    <TextView
+        android:id="@+id/divider1"
+        android:layout_width="225dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="#F191AC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmCollarColor_textView" />
+
+    <TextView
+        android:id="@+id/yes_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/yes"
+        android:textColor="#F191AC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+    <TextView
+        android:id="@+id/cancel_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/cancel"
+        android:textColor="#9C9898"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/yes_action"
+        app:layout_constraintEnd_toStartOf="@+id/yes_action" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

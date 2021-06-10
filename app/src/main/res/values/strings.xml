@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Chatimals</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="make_your_personal_account">Make your personal account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_accept_the">I accept the</string>
+    <string name="terms_of_use_and_privacy_policy">Terms of Use and Privacy Policy</string>
+    <string name="terms_title">Terms of Use and \nPrivacy Policy</string>
+    <string name="hello">Hello</string>
+    <string name="sign_in_to_return_to_your_pet">Sign in to return to your pet</string>
+    <string name="log_in">Log in</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up_here">Sign up here!</string>
+    <string name="alert_dialog_terms">Chatimals™ uses your information solely for the running of its applications and features. This is to ensure that the experience of the user is efficient and interactive. \n\nBy accepting the <b>Terms of Use and Privacy Policy</b>, you are agreeing to let Chatimals™ save your information and data in order to allow for the resumption of actions and certain attributes.\n\n<b>P.S.</b> I can view all of your information, so I recommend not using passwords that you actually use! But your secret is safe with me<![CDATA[ <3]]></string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="enter_name_here">Enter name here</string>
+    <string name="animal">Animal</string>
+    <string name="cat">Cat</string>
+    <string name="dog">Dog</string>
+    <string name="fur_color">Fur Color</string>
+    <string name="black">Black</string>
+    <string name="white">White</string>
+    <string name="tan">Tan</string>
+    <string name="collar_color">Collar Color</string>
+    <string name="create_pet">Create pet</string>
+    <string name="i_3_you"><![CDATA[I <3 you]]></string>
+    <string name="reply">Reply</string>
+    <string name="write_a_reply">Write a reply…</string>
+    <string name="replies">Replies</string>
+    <string name="write_a_message">Write a message...</string>
+    <string name="all_messages">All Messages</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_your_pet">Create your pet?</string>
+    <string name="sign_out_dialog_title">Are you sure you want to sign out?</string>
+    <string name="back">Back</string>
+    <string name="are_you_sure_you_want_to_sign_out">Are you sure you want to sign out?</string>
+    <string name="send">Send</string>
+    <string name="rate_error"><b>Error:</b> Please enter a rating</string>
+    <string name="confirm">Confirm</string>
+    <string name="_5">-/5</string>
+    <string name="no_chats_to_show_be_the_first_to_message">No chats to show, be the first to message!</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="rate">Rate</string>
+    <string name="no_replies_to_show_be_the_first_to_reply">No replies to show, be the first to reply!</string>
+    <string name="previous_rating">Previous rating:</string>
+    <string name="fur">fur</string>
+    <string name="collar">collar</string>
+    <string name="no_ratings_yet">*No ratings yet</string>
+    <string name="are_you_sure_you_want_to_delete_this_message">Are you sure you want to\ndelete your message?</string>
+    <string name="your_pet_s_health_is_determined_by_its_status_bars">Your pet\'s health is determined by its status bars. Two bars exist: a mood bar and a hunger bar. You can improve your pet\'s mood by playing and interacting with it, and you can give it food and water to curb its hunger.</string>
+    <string name="how_does_my_pet_work">How your pet works:</string>
+    <string name="what_can_i_do">What to do:</string>
+    <string name="what_to_do">In addition to interacting with your pet, you can also interact with other users on the app! Visit the Chat screen in order to post statuses about your pet and yourself and respond to other people. You can also check out the Rate screen to see the top rated pets on the app that were voted on by other users :)</string>
+    <string name="about_the_app">About the app:</string>
+    <string name="about_app">Chatimals aims to provide a simple way to entertain individuals wanting to personalize their own digital pet and connect with other people. I hope that you enjoy having your furry virtual friend!</string>
+    <string name="are_you_sure_you_want_to_delete_your_reply">Are you sure you want to\ndelete your reply?</string>
+    <string name="delete">Delete</string>
+    <string name="no">No</string>
+    <string name="i_understand">I understand</string>
+    <string name="pick_color">Pick color</string>
+    <string name="top_rated_pets">Top Rated Pets</string>
+    <string name="welcome">Welcome</string>
+
+
+    <string-array name="sort_styles_array">
+        <item>Newest</item>
+        <item>Oldest</item>
+        <item>Most Likes</item>
+    </string-array>
+</resources>

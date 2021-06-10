@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE8EA"
+    tools:context=".RateFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_gradient_rect"
+        android:paddingTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/best_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/top_rated_pets"
+        android:textColor="#EF8686"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/tiara_imageView"
+        app:layout_constraintStart_toEndOf="@+id/tiara_imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tiara_imageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/tiara"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/best_textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/tiara_imageView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/tiara"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/best_textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <ImageView
+        android:id="@+id/firstPlace_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pedestal1_textView"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal1_textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pedestal1_textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:src="@drawable/black_cat_blue_collar" />
+
+    <ImageView
+        android:id="@+id/secondPlace_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="40dp"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/pedestal2_textView"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal2_textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pedestal2_textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:src="@drawable/black_cat_blue_collar" />
+
+    <ImageView
+        android:id="@+id/thirdPlace_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pedestal3_textView"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal3_textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pedestal3_textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:src="@drawable/black_cat_blue_collar" />
+
+    <TextView
+        android:id="@+id/pedestal1_textView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/square"
+        app:layout_constraintEnd_toStartOf="@+id/pedestal3_textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pedestal2_textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/gold_imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/crown_gold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/pet1_textView"
+        app:layout_constraintEnd_toEndOf="@+id/pet1_textView"
+        app:layout_constraintStart_toStartOf="@+id/pet1_textView" />
+
+    <TextView
+        android:id="@+id/user1_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/gudea"
+        android:gravity="center"
+        android:textColor="#757575"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstPlace_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/firstPlace_imageView"
+        app:layout_constraintStart_toStartOf="@+id/firstPlace_imageView" />
+
+    <TextView
+        android:id="@+id/pet1_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:textColor="#3E3E3E"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/user1_textView"
+        app:layout_constraintEnd_toEndOf="@+id/firstPlace_imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstPlace_imageView" />
+
+    <ImageView
+        android:id="@+id/white1_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/star_white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal1_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal1_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal1_textView" />
+
+    <ImageView
+        android:id="@+id/star1_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/clip_drawable_star"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal1_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal1_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal1_textView" />
+
+    <ImageView
+        android:id="@+id/starLines1_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/star_outline"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal1_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal1_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal1_textView" />
+
+    <TextView
+        android:id="@+id/rate1_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rate_button"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:text="@string/rate"
+        android:textAllCaps="false"
+        android:textColor="#FFA3BE"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/white1_imageView"
+        app:layout_constraintStart_toStartOf="@+id/white1_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/white1_imageView" />
+
+    <TextView
+        android:id="@+id/pedestal2_textView"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/square"
+        app:layout_constraintBottom_toBottomOf="@+id/pedestal1_textView"
+        app:layout_constraintEnd_toStartOf="@+id/pedestal1_textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/silver_imageView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:src="@drawable/crown_silver"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/pet2_textView"
+        app:layout_constraintEnd_toEndOf="@+id/pet2_textView"
+        app:layout_constraintStart_toStartOf="@+id/pet2_textView" />
+
+    <TextView
+        android:id="@+id/pet2_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:textColor="#3E3E3E"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/user2_textView"
+        app:layout_constraintEnd_toEndOf="@+id/secondPlace_imageView"
+        app:layout_constraintStart_toStartOf="@+id/secondPlace_imageView" />
+
+    <TextView
+        android:id="@+id/rate2_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rate_button"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:paddingStart="3dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="1dp"
+        android:text="@string/rate"
+        android:textAllCaps="false"
+        android:textColor="#FFA3BE"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/white2_imageView"
+        app:layout_constraintStart_toStartOf="@+id/white2_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/white2_imageView" />
+
+    <TextView
+        android:id="@+id/user2_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/gudea"
+        android:gravity="center"
+        android:textColor="#757575"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondPlace_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/secondPlace_imageView"
+        app:layout_constraintStart_toStartOf="@+id/secondPlace_imageView" />
+
+    <ImageView
+        android:id="@+id/white2_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/star_white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal2_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal2_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal2_textView" />
+
+    <ImageView
+        android:id="@+id/star2_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/clip_drawable_star"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal2_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal2_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal2_textView" />
+
+    <ImageView
+        android:id="@+id/starLines2_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/star_outline"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal2_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal2_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal2_textView" />
+
+    <TextView
+        android:id="@+id/pedestal3_textView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/square"
+        app:layout_constraintBottom_toBottomOf="@+id/pedestal1_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pedestal1_textView" />
+
+    <ImageView
+        android:id="@+id/bronze_imageView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:src="@drawable/crown_bronze"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/pet3_textView"
+        app:layout_constraintEnd_toEndOf="@+id/pet3_textView"
+        app:layout_constraintStart_toStartOf="@+id/pet3_textView" />
+
+    <TextView
+        android:id="@+id/pet3_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:textColor="#3E3E3E"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/user3_textView"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPlace_imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/thirdPlace_imageView" />
+
+    <TextView
+        android:id="@+id/user3_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/gudea"
+        android:gravity="center"
+        android:textColor="#757575"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdPlace_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPlace_imageView"
+        app:layout_constraintStart_toStartOf="@+id/thirdPlace_imageView" />
+
+    <TextView
+        android:id="@+id/rate3_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rate_button"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:paddingStart="3dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="1dp"
+        android:text="@string/rate"
+        android:textAllCaps="false"
+        android:textColor="#FFA3BE"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/white3_imageView"
+        app:layout_constraintStart_toStartOf="@+id/white3_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/white3_imageView" />
+
+    <ImageView
+        android:id="@+id/white3_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/star_white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal3_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal3_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal3_textView" />
+
+    <ImageView
+        android:id="@+id/star3_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/clip_drawable_star"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal3_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal3_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal3_textView" />
+
+    <ImageView
+        android:id="@+id/starLines3_imageView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/star_outline"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/pedestal3_textView"
+        app:layout_constraintStart_toStartOf="@+id/pedestal3_textView"
+        app:layout_constraintTop_toBottomOf="@+id/pedestal3_textView" />
+
+    <TextView
+        android:id="@+id/dividing_textView"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate1_button" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rateRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/barRate_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividing_textView" />
+
+
+    <TextView
+        android:id="@+id/barRate_textView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#877A82"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeRate_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/homeRate_textView"
+        app:layout_constraintEnd_toStartOf="@+id/chatRate_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barRate_textView" />
+
+    <ImageView
+        android:id="@+id/chatRate_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toTopOf="@+id/homeRate_textView"
+        app:layout_constraintEnd_toStartOf="@+id/rateRate_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeRate_imageView"
+        app:layout_constraintTop_toTopOf="@+id/barRate_textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/rateRate_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/star_light"
+        app:layout_constraintBottom_toTopOf="@+id/homeRate_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chatRate_imageView"
+        app:layout_constraintTop_toTopOf="@+id/barRate_textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/homeRate_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gudea"
+        android:text="@string/home"
+        android:textColor="#FDCFD4"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chatRate_textView"
+        app:layout_constraintEnd_toEndOf="@+id/homeRate_imageView"
+        app:layout_constraintStart_toStartOf="@+id/homeRate_imageView" />
+
+    <TextView
+        android:id="@+id/chatRate_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/gudea"
+        android:text="@string/chat"
+        android:textColor="#FDCFD4"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chatRate_imageView"
+        app:layout_constraintStart_toStartOf="@+id/chatRate_imageView" />
+
+    <TextView
+        android:id="@+id/rateRate_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gudea"
+        android:text="@string/rate"
+        android:textColor="#FFEAEB"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chatRate_textView"
+        app:layout_constraintEnd_toEndOf="@+id/rateRate_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rateRate_imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

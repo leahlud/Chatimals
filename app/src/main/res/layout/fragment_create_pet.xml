@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spots"
+    tools:context=".CreatePetFragment">
+
+    <ImageView
+        android:id="@+id/first_imageView2"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/second_step"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createPetError_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/error_red"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collarBase_textView" />
+
+    <TextView
+        android:id="@+id/petNameTitle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/pet_name"
+        android:textColor="#D0FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/petName_editText"
+        app:layout_constraintStart_toStartOf="@+id/petName_editText" />
+
+    <EditText
+        android:id="@+id/petName_editText"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/square_rounded_corners"
+        android:backgroundTint="#BFFFFFFF"
+        android:ems="10"
+        android:hint="@string/enter_name_here"
+        android:inputType="textPersonName"
+        android:paddingStart="30dp"
+        android:textColor="#5E5E5E"
+        android:textCursorDrawable="@null"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_imageView2" />
+
+    <TextView
+        android:id="@+id/animalBase_textView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/square_rounded_corners"
+        android:backgroundTint="#BFFFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/furBase_textView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petName_editText" />
+
+    <TextView
+        android:id="@+id/animalTitle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/animal"
+        android:textColor="#D0FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/animalBase_textView"
+        app:layout_constraintStart_toStartOf="@+id/animalBase_textView" />
+
+    <Button
+        android:id="@+id/cat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/circular_shape"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cat"
+        android:textAllCaps="false"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/animalBase_textView"
+        app:layout_constraintEnd_toEndOf="@+id/dog_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dog_button"
+        app:layout_constraintTop_toBottomOf="@+id/dog_button" />
+
+    <Button
+        android:id="@+id/dog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/circular_shape"
+        android:fontFamily="@font/roboto"
+        android:text="@string/dog"
+        android:textAllCaps="false"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cat_button"
+        app:layout_constraintEnd_toEndOf="@+id/animalBase_textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/animalBase_textView"
+        app:layout_constraintTop_toTopOf="@+id/animalBase_textView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/furBase_textView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/square_rounded_corners"
+        android:backgroundTint="#BFFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/animalBase_textView"
+        app:layout_constraintTop_toBottomOf="@+id/petName_editText" />
+
+    <TextView
+        android:id="@+id/furColorTitle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/fur_color"
+        android:textColor="#D0FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/furBase_textView"
+        app:layout_constraintStart_toStartOf="@+id/furBase_textView" />
+
+    <ImageView
+        android:id="@+id/black_imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/black_fur"
+        app:layout_constraintBottom_toTopOf="@+id/tan_imageView"
+        app:layout_constraintStart_toStartOf="@+id/furBase_textView"
+        app:layout_constraintTop_toTopOf="@+id/furBase_textView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/tan_imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/tan_fur"
+        app:layout_constraintBottom_toTopOf="@+id/white_imageView"
+        app:layout_constraintStart_toStartOf="@+id/furBase_textView"
+        app:layout_constraintTop_toBottomOf="@+id/black_imageView" />
+
+    <ImageView
+        android:id="@+id/white_imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/white_fur"
+        app:layout_constraintBottom_toBottomOf="@+id/furBase_textView"
+        app:layout_constraintStart_toStartOf="@+id/furBase_textView"
+        app:layout_constraintTop_toBottomOf="@+id/tan_imageView" />
+
+    <RadioGroup
+        android:id="@+id/fur_RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/furBase_textView"
+        app:layout_constraintStart_toEndOf="@+id/tan_imageView"
+        app:layout_constraintTop_toTopOf="@+id/furBase_textView">
+
+        <RadioButton
+            android:id="@+id/black_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#5E5E5E"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="4dp"
+            android:text="@string/black"
+            android:textColor="#5E5E5E"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/tan_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:buttonTint="#5E5E5E"
+            android:checked="false"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="4dp"
+            android:text="@string/tan"
+            android:textColor="#5E5E5E"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/white_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#5E5E5E"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="4dp"
+            android:text="@string/white"
+            android:textColor="#5E5E5E"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/collarBase_textView"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/square_rounded_corners"
+        android:backgroundTint="#BFFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalBase_textView" />
+
+    <TextView
+        android:id="@+id/collarColorTitle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/collar_color"
+        android:textColor="#D0FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/collarBase_textView"
+        app:layout_constraintStart_toStartOf="@+id/collarBase_textView" />
+
+    <ImageView
+        android:id="@+id/redCollar_imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/red"
+        app:layout_constraintBottom_toTopOf="@+id/greenCollar_imageView"
+        app:layout_constraintStart_toStartOf="@+id/collarBase_textView"
+        app:layout_constraintTop_toTopOf="@+id/collarBase_textView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/outline_imageView1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/color_outline"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/redCollar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/redCollar_imageView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/orangeCollar_imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/orange"
+        app:layout_constraintBottom_toTopOf="@+id/blueCollar_imageView"
+        app:layout_constraintStart_toEndOf="@+id/redCollar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/collarBase_textView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/outline_imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/color_outline"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/orangeCollar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/orangeCollar_imageView" />
+
+    <ImageView
+        android:id="@+id/pinkCollar_imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/pink"
+        app:layout_constraintBottom_toTopOf="@+id/purpleCollar_imageView"
+        app:layout_constraintStart_toEndOf="@+id/orangeCollar_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/collarBase_textView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/outline_imageView3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/color_outline"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/pinkCollar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/pinkCollar_imageView" />
+
+    <ImageView
+        android:id="@+id/greenCollar_imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/green"
+        app:layout_constraintBottom_toBottomOf="@+id/collarBase_textView"
+        app:layout_constraintStart_toStartOf="@+id/collarBase_textView"
+        app:layout_constraintTop_toBottomOf="@+id/redCollar_imageView" />
+
+    <ImageView
+        android:id="@+id/outline_imageView4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/color_outline"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/greenCollar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/greenCollar_imageView" />
+
+    <ImageView
+        android:id="@+id/blueCollar_imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/collarBase_textView"
+        app:layout_constraintStart_toEndOf="@+id/greenCollar_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/orangeCollar_imageView" />
+
+    <ImageView
+        android:id="@+id/outline_imageView5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/color_outline"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/blueCollar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/blueCollar_imageView" />
+
+    <ImageView
+        android:id="@+id/purpleCollar_imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/purple"
+        app:layout_constraintBottom_toTopOf="@+id/collarBase_textView"
+        app:layout_constraintStart_toEndOf="@+id/blueCollar_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/pinkCollar_imageView" />
+
+    <ImageView
+        android:id="@+id/outline_imageView6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/color_outline"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/purpleCollar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/purpleCollar_imageView" />
+
+    <TextView
+        android:id="@+id/color_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/gudea"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/pick_color"
+        app:layout_constraintBottom_toBottomOf="@+id/collarBase_textView"
+        app:layout_constraintEnd_toEndOf="@+id/collarBase_textView"
+        app:layout_constraintStart_toEndOf="@+id/pinkCollar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/collarBase_textView" />
+
+    <Button
+        android:id="@+id/createPet_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/view_gradient"
+        android:paddingVertical="15dp"
+        android:text="@string/create_pet"
+        android:theme="@style/ButtonTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE7EA"
+    tools:context=".ChatFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:clipToPadding="false"
+        android:paddingBottom="400dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/barChat_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/above_textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/noChats_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/gudea"
+        android:text="@string/no_chats_to_show_be_the_first_to_message"
+        android:textColor="#656565"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chatRecyclerView" />
+
+    <TextView
+        android:id="@+id/above_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_rect"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_messages"
+        android:textColor="#61555C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/above_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/sortChats_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/sort_spinner_background"
+        android:paddingStart="5dp"
+        android:paddingEnd="26dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/SortSpinnerTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/above_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/barChat_textView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#877A82"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeChat_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/homeChat_textView"
+        app:layout_constraintEnd_toStartOf="@+id/chatChat_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barChat_textView" />
+
+    <ImageView
+        android:id="@+id/chatChat_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/bubble_light"
+        app:layout_constraintBottom_toTopOf="@+id/homeChat_textView"
+        app:layout_constraintEnd_toStartOf="@+id/rateChat_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeChat_imageView"
+        app:layout_constraintTop_toTopOf="@+id/barChat_textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/rateChat_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toTopOf="@+id/homeChat_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chatChat_imageView"
+        app:layout_constraintTop_toTopOf="@+id/barChat_textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/homeChat_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gudea"
+        android:text="@string/home"
+        android:textColor="#FDCFD4"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chatChat_textView"
+        app:layout_constraintEnd_toEndOf="@+id/homeChat_imageView"
+        app:layout_constraintStart_toStartOf="@+id/homeChat_imageView" />
+
+    <TextView
+        android:id="@+id/chatChat_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/gudea"
+        android:text="@string/chat"
+        android:textColor="#FFEAEB"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chatChat_imageView"
+        app:layout_constraintStart_toStartOf="@+id/chatChat_imageView" />
+
+    <TextView
+        android:id="@+id/rateChat_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gudea"
+        android:text="@string/rate"
+        android:textColor="#FDCFD4"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chatChat_textView"
+        app:layout_constraintEnd_toEndOf="@+id/rateChat_imageView"
+        app:layout_constraintStart_toStartOf="@+id/rateChat_imageView" />
+
+    <ImageView
+        android:id="@+id/newChat_imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/new_chat"
+        app:layout_constraintBottom_toTopOf="@+id/barChat_textView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

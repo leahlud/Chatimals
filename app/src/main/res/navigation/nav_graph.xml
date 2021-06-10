@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/petFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.PetFragment"
+        android:label="fragment_pet"
+        tools:layout="@layout/fragment_pet" >
+        <action
+            android:id="@+id/action_petFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_petFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_petFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_petFragment_to_rateFragment"
+            app:destination="@id/rateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_petFragment"
+            app:destination="@id/petFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_createPetFragment"
+            app:destination="@id/createPetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPetFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.CreatePetFragment"
+        android:label="fragment_create_pet"
+        tools:layout="@layout/fragment_create_pet" >
+        <action
+            android:id="@+id/action_createPetFragment_to_petFragment"
+            app:destination="@id/petFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat"
+        app:startDestination="@id/action_chatFragment_to_petFragment">
+        <action
+            android:id="@+id/action_chatFragment_to_replyFragment"
+            app:destination="@id/replyFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_rateFragment"
+            app:destination="@id/rateFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_petFragment"
+            app:destination="@id/petFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/replyFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.ReplyFragment"
+        android:label="fragment_reply"
+        tools:layout="@layout/fragment_reply" >
+        <argument
+            android:name="chatMessage"
+            app:argType="string" />
+        <argument
+            android:name="chatIcon"
+            app:argType="string" />
+        <argument
+            android:name="chatTimestamp"
+            app:argType="long" />
+        <argument
+            android:name="chatUser"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
+    <fragment
+        android:id="@+id/rateFragment"
+        android:name="com.ludwikowski.honorsmobileapps.finalproject.RateFragment"
+        android:label="fragment_rate"
+        tools:layout="@layout/fragment_rate" >
+        <action
+            android:id="@+id/action_rateFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_rateFragment_to_petFragment"
+            app:destination="@id/petFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050497258227",
+    "project_id": "finalproject-c4b00",
+    "storage_bucket": "finalproject-c4b00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050497258227:android:9729ae44cff54a1bc1dd86",
+        "android_client_info": {
+          "package_name": "com.ludwikowski.honorsmobileapps.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050497258227-u7vn8vcp1el2v03ccdn853prbrmoglvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkMrHOjU42jPwS2zhjQl7CSAGwD_HsLwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050497258227-u7vn8vcp1el2v03ccdn853prbrmoglvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

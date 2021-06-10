@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDEF"
+    tools:context=".PetFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_gradient_rect"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/dogHearts_gif"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="110dp"
+        android:src="@drawable/dog_hearts_gif"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pet_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/pet_imageView" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/catHearts_gif"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="110dp"
+        android:src="@drawable/cat_hearts_gif"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pet_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/pet_imageView" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/sleep_gif"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="65dp"
+        android:src="@drawable/sleep_gif"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pet_imageView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/hunger_gif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/food_bowl_gif"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pet_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/pet_imageView" />
+
+    <TextView
+        android:id="@+id/petName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:textColor="#626168"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/whiteBones_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bones_base"
+        app:layout_constraintBottom_toBottomOf="@+id/hunger_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/hunger_imageView"
+        app:layout_constraintStart_toStartOf="@+id/hunger_imageView"
+        app:layout_constraintTop_toTopOf="@+id/hunger_imageView" />
+
+    <ImageView
+        android:id="@+id/hunger_imageView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/clip_drawable_hunger"
+        app:layout_constraintEnd_toStartOf="@+id/status_imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petName_textView" />
+
+    <ImageView
+        android:id="@+id/boneLines_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bones_lines"
+        app:layout_constraintBottom_toBottomOf="@+id/hunger_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/hunger_imageView"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="@+id/hunger_imageView"
+        app:layout_constraintTop_toTopOf="@+id/hunger_imageView" />
+
+    <ImageView
+        android:id="@+id/whiteHearts_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/hearts_base"
+        app:layout_constraintBottom_toBottomOf="@+id/mood_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/mood_imageView"
+        app:layout_constraintStart_toStartOf="@+id/mood_imageView"
+        app:layout_constraintTop_toTopOf="@+id/mood_imageView" />
+
+    <ImageView
+        android:id="@+id/mood_imageView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/clip_drawable_mood"
+        app:layout_constraintEnd_toStartOf="@+id/status_imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hunger_imageView" />
+
+    <ImageView
+        android:id="@+id/heartLines_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/hearts_lines"
+        app:layout_constraintBottom_toBottomOf="@+id/mood_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/mood_imageView"
+        app:layout_constraintStart_toStartOf="@+id/mood_imageView"
+        app:layout_constraintTop_toTopOf="@+id/mood_imageView" />
+
+    <ImageView
+        android:id="@+id/status_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mood_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hunger_imageView"
+        tools:src="@drawable/love" />
+
+
+    <ImageView
+        android:id="@+id/pet_imageView"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/water_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteHearts_imageView"
+        app:layout_constraintVertical_bias="0.65"
+        tools:src="@drawable/black_cat_blue_collar" />
+
+    <ImageView
+        android:id="@+id/sleep_imageView"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pet_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/pet_imageView" />
+
+    <ImageView
+        android:id="@+id/tongue_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat_tongue"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pet_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/pet_imageView"
+        app:layout_constraintStart_toStartOf="@+id/pet_imageView"
+        app:layout_constraintTop_toTopOf="@+id/pet_imageView" />
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#F1EFEF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="@+id/food_button"
+        app:layout_constraintEnd_toStartOf="@+id/food_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/food_button"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#F1EFEF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food_bowl"
+        app:layout_constraintBottom_toTopOf="@+id/barPet_textView"
+        app:layout_constraintEnd_toStartOf="@+id/water_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/play_button" />
+
+    <ImageView
+        android:id="@+id/water_button"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#F1EFEF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/water_drop"
+        app:layout_constraintBottom_toBottomOf="@+id/food_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/food_button" />
+
+    <TextView
+        android:id="@+id/barPet_textView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#877A82"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/homePet_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/home_light"
+        app:layout_constraintBottom_toTopOf="@+id/homePet_textView"
+        app:layout_constraintEnd_toStartOf="@+id/chatPet_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barPet_textView" />
+
+    <ImageView
+        android:id="@+id/chatPet_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toTopOf="@+id/homePet_textView"
+        app:layout_constraintEnd_toStartOf="@+id/ratePet_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homePet_imageView"
+        app:layout_constraintTop_toTopOf="@+id/barPet_textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ratePet_imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toTopOf="@+id/homePet_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chatPet_imageView"
+        app:layout_constraintTop_toTopOf="@+id/barPet_textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/homePet_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gudea"
+        android:text="@string/home"
+        android:textColor="#FFEAEB"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chatPet_textView"
+        app:layout_constraintEnd_toEndOf="@+id/homePet_imageView"
+        app:layout_constraintStart_toStartOf="@+id/homePet_imageView" />
+
+    <TextView
+        android:id="@+id/chatPet_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/gudea"
+        android:text="@string/chat"
+        android:textColor="#FDCFD4"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chatPet_imageView"
+        app:layout_constraintStart_toStartOf="@+id/chatPet_imageView" />
+
+    <TextView
+        android:id="@+id/ratePet_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gudea"
+        android:text="@string/rate"
+        android:textColor="#FDCFD4"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chatPet_textView"
+        app:layout_constraintEnd_toEndOf="@+id/ratePet_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/ratePet_imageView" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/play_gif"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/yarn_gif"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pet_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
