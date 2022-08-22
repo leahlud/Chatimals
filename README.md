@@ -8,7 +8,5 @@ Android final project for my high school Mobile Application Development course. 
 * Use of RecyclerView and custom dialog boxes
 * Inclusion of animations, custom graphics, and audio files
 
-
 **An overview of the app's UI**:
-![Chatimals photos](https://user-images.githubusercontent.com/63080641/186009725-c2518721-032a-46b5-a1b8-3b5eb1831b8e.jpg)
-
+![Chatimals photos1024_1](https://user-images.githubusercontent.com/63080641/186010734-df61bf41-8b32-4410-b8aa-14a275406df0.jpg)
