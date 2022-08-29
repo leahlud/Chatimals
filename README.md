@@ -1,5 +1,5 @@
 # Chatimals
-![title](https://user-images.githubusercontent.com/63080641/186007648-b47ecfcf-c789-4369-82f1-1b4e8a8e6198.png)
+![chat-removebg-preview](https://user-images.githubusercontent.com/63080641/187112327-2d7e0713-0cb9-444a-b067-d2ca767ec3bf.png)
 
 Android final project for my high school Mobile Application Development course. This application allows you to create a personal account where you can design your own virtual pet. You are able to interact with your animal and maintain it's health bar, while also using the built-in messaging system to chat with other users on the app!
 
