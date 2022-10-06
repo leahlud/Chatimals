@@ -2,12 +2,12 @@
 
 ![chat-removebg-preview](https://user-images.githubusercontent.com/63080641/187112327-2d7e0713-0cb9-444a-b067-d2ca767ec3bf.png)
 
-Android final project for my high school Mobile Application Development course. This application allows you to create a personal account where you can design your own virtual pet. You are able to interact with your animal and maintain it's health bar, while also using the built-in messaging system to chat with other users on the app!
+Android final project for my high school Mobile Application Development course. This application allows you to create a personal account where you can design your own virtual pet. Interact with your animal and maintain its health bar by feeding and playing with it! Users can also chat with other people on the app through the built-in real-time messaging system.
 
 **Main features include**:
-* In-app data and information stored using Firebase
-* Use of RecyclerView and custom dialog boxes
-* Inclusion of animations, custom graphics, and audio files
+* A personal database (Firebase) that stores in-app data and user information
+* Different layout designs, such as RecyclerView and custom dialog boxes
+* Animations, custom-drawn graphics, and sounds
 
 **An overview of the app's UI**:
 
